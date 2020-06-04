@@ -1,0 +1,65 @@
+html,body{
+    width:100%;
+    height:100%;
+    font-size:16px;
+    font-weight:bold;
+}
+.bg {
+    background :url('../img/hero/hero-1.jpg') no-repeat;
+    background-size:cover;
+    width:100%;
+    height:74%;
+}
+.row-container{
+    border:1px solid #fff;
+    border-radius:20px;
+    padding:30px;
+    -webkit-box-shadow: 14px 13px 16px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 13px 16px 3px rgba(0,0,0,0.75);
+    box-shadow: 14px 13px 16px 3px rgba(0,0,0,0.75);
+    background-color:black;
+    opacity:0.8;
+    color:white;
+}
+
+
+form .title{
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+form .form-group p{
+    color:red;
+    font-weight: bold;
+}
+form p{
+    color:white;
+}
+.form-control { 
+    margin-bottom: 10px;
+}
+.login-screen-bg {  
+    background-color: #EFEFEF;
+}
+form a{
+    color:#007FAA;
+    text-decoration: none;
+}
+form a:hover{
+    color:#007FAA;
+    text-decoration: underline;
+}
+
+input[type="radio"] {
+    margin-top:15px;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+input[type="checkbox"] {
+    margin-top:15px;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}

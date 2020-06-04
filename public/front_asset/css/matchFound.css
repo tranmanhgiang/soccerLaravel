@@ -1,0 +1,155 @@
+/*---------------------
+  Club Section
+-----------------------*/
+
+.club-section {
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+
+.club-content .cc-pic {
+	text-align: center;
+}
+
+.club-content .cc-text .ct-title {
+	margin-bottom: 45px;
+}
+
+.club-content .cc-text .ct-title h3 {
+	font-size: 28px;
+	color: #151618;
+	font-weight: 500;
+}
+
+.club-section .cc-text .ct-title .fc {
+  margin-bottom: 30px;
+}
+
+.club-content .cc-text .ct-widget ul li {
+	list-style: none;
+	display: inline-block;
+  width:33.33%;
+  float: left;
+  padding-right: 5px;
+	margin-bottom: 12px;
+}
+
+.club-content .cc-text .ct-widget ul li h5 {
+	color: #151618;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.club-content .cc-text .ct-widget ul li .cw-social a {
+	display: inline-block;
+	color: #636363;
+	margin-right: 20px;
+}
+
+.club-content .cc-text .ct-widget ul li .cw-social a:last-child {
+	margin-right: 0;
+}
+
+.club-tab-list {
+	margin-top: 30px;
+}
+
+.club-tab-list .nav {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-bottom: 48px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.club-tab-list .nav .nav-item {
+	margin-right: 45px;
+}
+
+.club-tab-list .nav .nav-item:last-child {
+	margin-right: 0px;
+}
+
+.club-tab-list .nav .nav-item .nav-link {
+	color: #ababab;
+	font-weight: 500;
+	font-size: 18px;
+	background: transparent;
+	border: none;
+	padding: 0;
+}
+
+.club-tab-list .nav .nav-item .nav-link.active {
+	color: #151618;
+}
+
+.club-tab-list .tab-content .club-tab-content .ct-item {
+	overflow: hidden;
+	padding: 20px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.club-tab-list .tab-content .club-tab-content .ct-item .ci-text {
+	float: left;
+}
+
+.club-tab-list .tab-content .club-tab-content .ct-item .ci-text img {
+	height: 70px;
+	width: 70px;
+	float: left;
+	margin-right: 20px;
+}
+
+.club-tab-list .tab-content .club-tab-content .ct-item .ci-text h5 {
+	color: #151618;
+	font-weight: 500;
+	overflow: hidden;
+	padding-top: 24px;
+}
+
+.club-tab-list .tab-content .club-tab-content .ct-item .ci-name {
+	float: right;
+	color: #636363;
+	font-size: 18px;
+	font-weight: 500;
+	padding-top: 22px;
+}
+
+.club-content {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 10px;
+}
+
+.cc-text .ct-title .btn-success {
+  height: 30px;
+  background-color: #dd1515 !important;
+  border: none;
+  
+}
+
+.cc-text .ct-title .btn-success:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 0;
+}
+.cc-text .ct-title a.caption{
+  color: #337ab7;
+}
+.club-content .row .cc-pic img {
+  width: 350px;
+  height: 350px;
+}
+
+.breadcrumb-section .container .row .bs-text .search {
+	height: 35px;
+	background-color: #dd1515 !important;
+	border: none;
+	margin-top: 0;
+}
+.breadcrumb-section .container .row .bs-text .form-control {
+	height: 35px;
+	margin-bottom: 0;
+}
+
+
+
+

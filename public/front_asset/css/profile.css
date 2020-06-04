@@ -1,0 +1,183 @@
+body {
+    background: #F1F3FA;
+  }
+  
+  .profile {
+    margin: 20px 0;
+  }
+  
+  .info_text {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .profile-sidebar {
+    padding: 20px 0 10px 0;
+    background: #fff;
+    border: 1px 1px 0 1px solid #93a3b5;
+    background-color: #f1f1f1;
+  }
+  
+  .profile-userpic img {
+    margin:auto;
+    display: block;
+    width: 20%;
+    height: 30%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+  }
+  
+  .profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .profile-usertitle-name {
+    color: #5a7391;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  
+  .profile-usertitle-job {
+    text-transform: uppercase;
+    color: #5b9bd1;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .profile-userbuttons {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .profile-userbuttons .btn {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 15px;
+    margin-right: 5px;
+  }
+  
+  .profile-userbuttons .btn:last-child {
+    margin-right: 0px;
+  }
+      
+  .profile-usermenu {
+    margin-top: 30px;
+  }
+  
+  .profile-usermenu ul li {
+    border-bottom: 1px solid #f0f4f7;
+  }
+  
+  .profile-usermenu ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .profile-usermenu ul li a {
+    color: #93a3b5;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .profile-usermenu ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  
+  .profile-usermenu ul li a:hover {
+    background-color: #fafcfd;
+    color: #5b9bd1;
+  }
+  
+  .profile-usermenu ul li.active {
+    border-bottom: none;
+  }
+  
+  .profile-usermenu ul li.active a {
+    color: #5b9bd1;
+    background-color: #f6f9fb;
+    border-left: 2px solid #5b9bd1;
+    margin-left: -2px;
+  }
+  
+  * {box-sizing: border-box}
+  body {font-family: "Lato", sans-serif;}
+  .tab{
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 25%;
+    height: 262px;
+  }
+  
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 20px 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  .tab button:focus {
+    background-color: #ddd;
+  }
+  
+  /* Style the tab content */
+  .profile-content {
+    padding: 12px;
+    float: right;
+    width: 75%;
+    border-left: none;
+    min-height: 262px;
+    background-color: #ddd;
+  }
+  .profile_width{
+      width:40%;
+      margin:auto;
+  }
+  .options{
+      max-height: calc(1100 - 100px);
+      overflow-y: auto;
+      margin-bottom: 50px;
+  }
+  
+  #monthAndYear, #calendar-body, #calendar-head{
+    text-align: center;
+  }
+  #monthAndYear {
+    background-color: #dd1515;
+  }
+  .btn-outline-danger:hover{
+    background-color: #dd1515 !important;
+  }
+.note {
+  font-weight: normal;
+  background-color: white;
+}
+.btn-success {
+  background-color: #dd1515 !important;
+  border: none;
+}

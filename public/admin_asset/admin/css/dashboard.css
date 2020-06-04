@@ -1,0 +1,25 @@
+.card-box {
+    width: 20%;
+    margin-left : 4%;
+    border : 1px solid black;
+    cursor: pointer;
+    background-color: #4e73df;
+    background-image: linear-gradient(180deg,#dd1515 10%,#224abe 100%);
+    opacity: 0.8;
+    background-size: cover;
+    color : white;
+    font-size : 30px;
+    display: table;
+}
+
+.card-box:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    color: white;
+    text-decoration: none;
+}
+
+.child {
+    display: table-cell;
+    vertical-align: middle;
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Specer Template">
+    <meta name="keywords" content="Specer, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./public/img/title_icon/title.jpg" type="image/x-icon">
+    <title>Tìm đối bóng đá giao lưu</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="public/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="public/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="public/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="public/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="public/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="public/css/style.css" type="text/css">
+    <link rel="stylesheet" href="public/css/log-res.css" type="text/css">
+    <link rel="stylesheet" href="public/css/profile.css" type="text/css">
+    <link rel="stylesheet" href="public/css/matchFound.css" type="text/css">
+    <link rel="stylesheet" href="public/css/clubsList.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="search-btn search-switch">
+            <i class="fa fa-search"></i>
+        </div>
+        
+        <ul class="main-menu mobile-menu">
+            <li class="active"><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./matchFound.html">Tìm đối</a></li>
+            <li><a href="./profile.html">Quản lý đội</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./regist.html">Đăng ký</a></li>
+            <li><a href="./login.html">Đăng nhập</a></li>
+        </ul>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section conatiner-fluid">
+        
+        <div class="header__nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="./index.html"><img src="public/img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="nav-menu">
+                            <ul class="main-menu">
+                                <li class="active"><a href="./index.html">Trang chủ</a></li>
+                                <li><a href="#">Tìm đối</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./matchFound.html">Đối đang chờ</a></li> <hr/>
+                                        <li><a href="clubsList.html">Danh sách đội bóng</a></li> <hr/>
+                                        <li><a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Đăng tìm đối</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./myClub.html">Quản lý đội</a></li>
+                                <li><a href="./contact.html">Contact Us</a></li>
+                                <li><a href="./regist.html">Đăng ký</a></li>
+                                <li><a href="./login.html">Đăng nhập</a></li>
+                            </ul>
+                            <div class="nm-right search-switch">
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas-open">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bs-text">
+                        <h2>Quản lý thông tin</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+
+    <section class="hero-section set-bg">
+        <div class = "container options" style = "margin-top:20px;">
+        
+            <div class="tab">
+            <button class="tablinks" onclick="display_info(event, 'user_info')" id="defaultOpen">
+                <i class="fa fa-user"></i>
+                <a> Thông tin cá nhân</a>
+            </button>
+            <button class="tablinks" onclick="display_info(event, 'info_edit')">
+                <i class="fa fa-pencil"></i>
+                <a> Chỉnh sửa thông tin</a>
+            </button>
+            <button class="tablinks" onclick="display_info(event, 'calender')">
+                <i class="fa fa-calendar"></i>
+                <a> Đối sắp giao lưu</a>
+            </button>
+            </div>
+       
+    <div id="user_info" class="profile-content">
+        <p class = "info_text">Thông tin cá nhân</b></p>
+        <div class="profile-sidebar">
+            <!-- SIDEBAR USERPIC -->
+            <div class="profile-userpic">
+                <img src="./public/img/messi.jpg" class="img-responsive" alt="">
+            </div>
+            <!-- END SIDEBAR USERPIC -->
+            <!-- SIDEBAR USER TITLE -->
+            <div class="profile-usertitle">
+                <div class="profile-usertitle-name">
+                    Trần Mạnh Giang
+                </div>
+                <div class="profile-usertitle-job">
+                    Đội trưởng
+                </div>
+            </div>
+        </div>
+        <p><b>Họ tên</b>: Trần Mạnh Giang</p>
+        <p><b>Email</b>: tranmanhgiang06051999@gmail.com</p>
+        <p><b>Mô tả bản thân</b>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugit nesciunt impedit saepe adipisci excepturi numquam esse voluptatem, eius totam, rerum delectus. Dolorem quidem quod, fugiat nobis est excepturi sed?</p>
+    </div>
+    
+    <div id="info_edit" class="profile-content" style = "display: none;">
+        <p class = "info_text">Chỉnh sửa thông tin cá nhân</p>
+        <form action="" method = "POST">
+            <div class = "row form-group" style = "margin-top:20px; ">
+                <label for="name_change" style = "width: 150px;margin:0 20px;"> Nhập họ:</label>
+                <input type = "text" id = "firstname_change" class="col-sm-6">
+            </div>
+            <div class = "row form-group" style = "margin-top:20px; ">
+                <label for="name_change" style = "width: 150px;margin:0 20px;"> Nhập tên:</label>
+                <input type = "text" id = "lastname_change" class="col-sm-6">
+            </div>
+            <div class="row form-group">
+                <label for="inputEmail3" style = "width: 150px;margin:0 20px;">Hình ảnh</label>
+                <input type="file" class="col-sm-6" id="inputEmail3" name = "thunbar">
+            </div>
+            <div class = "row form-group">
+                <label for="description" style = "width: 150px;margin:0 20px;"> Mô tả về bản thân</label>
+                <textarea id = "description" class="col-sm-6" style ="height:100px;"></textarea>
+            </div>
+            <button type = "button" class = "btn btn-success" style = "margin:0 20px;">Thay đổi</button>
+        </form>
+    </div>
+    
+    <div id="calender" class="profile-content" style = "display: none;">
+        <div class="card">
+            <h3 class="card-header" id="monthAndYear"></h3>
+            <table class="table table-bordered table-responsive-sm" id="calendar">
+                <thead id="calendar-head">
+                <tr>
+                    <th>CN</th>
+                    <th>Thứ 2</th>
+                    <th>Thứ 3</th>
+                    <th>Thứ 4</th>
+                    <th>Thứ 5</th>
+                    <th>Thứ 6</th>
+                    <th>Thứ 7</th>
+                </tr>
+                </thead>
+                <tbody id="calendar-body">
+
+                </tbody>
+    
+                <tbody id="calendar-body">
+    
+                </tbody>
+            </table>
+    
+            <div class="form-inline">
+                <button class="btn btn-outline-danger col-sm-6" id="previous" onclick="previous()">Previous</button>
+                <button class="btn btn-outline-danger col-sm-6" id="next" onclick="next()">Next</button>
+            </div>
+        </div>
+        <br/>
+        <hr/>
+        <span>Ghi chú</span>
+        <div class="note">
+            <b>Tên đối</b> : UET <br/>
+            <b>Sân bóng</b> : DH ngoai ngu<br/>
+            <b>Khung giờ</b> : 17-18h
+        </div>
+        <br/>
+        <hr/>
+        <div class="appointment">
+            <button class="btn btn-outline-danger col-md-2 col-sm-2" onclick="showAppointment()">Tất cả cuộc hẹn</button>
+        </div>
+        <br/>
+        <div id = "allAppointment" style = "display: none;">
+            <div class="note">
+                <b>Tên đối</b> : UET <br/>
+                <b>Sân bóng</b> : DH ngoai ngu<br/>
+                <b>Ngày</b> : 24/4/2020<br/>
+                <b>Khung giờ</b> : 17-18h
+            </div>
+            <br/>
+            <div class="note">
+                <b>Tên đối</b> : SOL <br/>
+                <b>Sân bóng</b> : PVD<br/>
+                <b>Ngày</b> : 24/4/2020<br/>
+                <b>Khung giờ</b> : 17-18h
+            </div>
+            <br/>
+            <div class="note">
+                <b>Tên đối</b> : ULIS <br/>
+                <b>Sân bóng</b> : HVKTQS<br/>
+                <b>Ngày</b> : 24/4/2020<br/>
+                <b>Khung giờ</b> : 17-18h
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    </section>
+
+
+    <!-- Footer Section Begin -->
+ <footer class="footer-section set-bg" data-setbg="public/img/footer-bg.jpg">
+        
+    <div class="container">
+        <div class="logo-footer">
+            Football
+        </div>
+        <div class="copyright-option">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="co-text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Post model begin -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tìm đối</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="form-group">
+                <label class="col-form-label">Ngày: <span class="bind">*</span></label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="col-form-label">Sân bóng: <span class="bind">*</span></label>
+                <div>
+                    <div class="form-check form-check-inline col-md-4">
+                        <input class="form-check-input" type="radio" value="option1" name="stadium">
+                        <label class="form-check-label" for="inlineCheckbox1">Đã có</label>
+                    </div>
+                    <div class="form-check form-check-inline col-md-4">
+                        <input class="form-check-input" type="radio" value="option2" name="stadium">
+                        <label class="form-check-label" for="inlineCheckbox2">Chưa có</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-form-label">Tên sân(nếu có):</label>
+                <input type="text" class="form-control">
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+            <button type="button" class="btn btn-danger"><i class="fa fa-send"></i> Đăng</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- Post model begin -->
+<!-- Search model Begin -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch"><i class="fa fa-close"></i></div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search model end -->
+
+<!-- Js Plugins -->
+<script src="public/js/jquery-3.3.1.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/jquery.magnific-popup.min.js"></script>
+<script src="public/js/jquery.slicknav.js"></script>
+<script src="public/js/owl.carousel.min.js"></script>
+<script src="public/js/main.js"></script>
+<script src="public/js/calendar.js"></script>
+</body>
+
+</html>
