@@ -78,11 +78,6 @@ Route::group(['prefix'=>'front','middleware'=>'userlogin'],function(){
     });
 });
 
-// //test
-// Route::get('front/myclub/create',function(){
-//     return view('front.myclub.create');
-// });
-// //endtest
 
 
 Route::get('front',function(){
@@ -103,3 +98,5 @@ Route::get('front/logout','UserController@userLogout');
 Route::get('front/find',function(){
     return view('front.findamatch.find');
 });
+
+Route::post('front/mail/{id}','MailController@sendToUser');

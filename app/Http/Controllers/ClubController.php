@@ -152,7 +152,11 @@ class ClubController extends Controller
     }
     public function waitingClub()
     {
-        $clubs = findAmatch::where('allow','1')->paginate(3);
+        $clubs = findAmatch::where([
+            ['status', '0'],
+            ['allow', '1'],
+            ['c_id','<>',Auth::user()->clubs->id]
+        ])->paginate(3);
         return view('front.findamatch.waitingClub',['clubs'=>$clubs]);
     }
 

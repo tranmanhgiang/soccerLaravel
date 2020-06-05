@@ -7,7 +7,7 @@
             <div class="col-lg-12">
                 <div class="bs-text">
                     <form class="form-inline d-flex justify-content-center md-form form-sm">
-                        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search" id="search" >
                         <button type="button" class="btn btn-success search" style="margin-top: 0;">Tìm kiếm</button>
                     </form>
                 </div>
@@ -39,7 +39,11 @@
                                         &nbsp;
                                         <button class="message btn btn-sm btn-default" title="Click để chat với đối" onclick="chat()"><i class="fa fa-comment"></i> Nói chuyện</button>
                                     </div>
-                                    <button type="button" class="btn btn-success btn-sm pull-right"><i class="fa fa-send"></i> Bắt đối</button>
+                                    <form action="front/mail/{{$item->clubs->users->id}}" method="POST">
+                                        @csrf
+                                        <button type="submit" class="btn btn-success btn-sm pull-right"><i class="fa fa-send"></i> Bắt đối</button>
+                                    </form>
+                                    
                                 </div>
                                 <p>{{$item->clubs->description}} </p>
                             </div>

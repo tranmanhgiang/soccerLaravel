@@ -50,6 +50,7 @@
     </div>
     <p><b>Họ tên</b>: {{$user->firstName . ' ' .$user->lastName}}</p>
     <p><b>Email</b>: {{$user->email}}</p>
+    <p><b>Email</b>: {{'0'.$user->phone}}</p>
     <p><b>Mô tả bản thân</b>: {{$user->description}}</p>
 </div>
 
