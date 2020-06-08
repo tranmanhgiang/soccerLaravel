@@ -307,6 +307,6 @@ class ClubController extends Controller
         $newPost->c_id = Auth::user()->clubs->id;
 
         $newPost->save();
-        return redirect('front.myclub.create')->with('success','Đăng ký thành công, vui lòng tạo đội bóng của bạn');
+        return redirect('front')->with('success','Đăng bài thành công');
     }
 }
