@@ -11,4 +11,8 @@ class findAmatch extends Model
     {
         return $this->belongsTo('App\Clubs','c_id','id');
     }
+    public function competitor()
+    {
+        return $this->hasMany('App\CompetitorList','fi_id','id');
+    }
 }

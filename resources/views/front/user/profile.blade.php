@@ -23,10 +23,6 @@
             <i class="fa fa-pencil"></i>
             <a> Chỉnh sửa thông tin</a>
         </button>
-        <button class="tablinks" onclick="display_info(event, 'calender')">
-            <i class="fa fa-calendar"></i>
-            <a> Danh sách đối</a>
-        </button>
         </div>
    
 
@@ -94,74 +90,27 @@
     </form>
 </div>
 
-<div id="calender" class="profile-content" style = "display: none;">
-    <div class="card">
-        <h3 class="card-header" id="monthAndYear"></h3>
-        <table class="table table-bordered table-responsive-sm" id="calendar">
-            <thead id="calendar-head">
-            <tr>
-                <th>CN</th>
-                <th>Thứ 2</th>
-                <th>Thứ 3</th>
-                <th>Thứ 4</th>
-                <th>Thứ 5</th>
-                <th>Thứ 6</th>
-                <th>Thứ 7</th>
-            </tr>
-            </thead>
-            <tbody id="calendar-body">
-
-            </tbody>
-
-            <tbody id="calendar-body">
-
-            </tbody>
-        </table>
-
-        <div class="form-inline">
-            <button class="btn btn-outline-danger col-sm-6" id="previous" onclick="previous()">Previous</button>
-            <button class="btn btn-outline-danger col-sm-6" id="next" onclick="next()">Next</button>
-        </div>
-    </div>
-    <br/>
-    <hr/>
-    <span>Ghi chú</span>
-    <div class="note">
-        <b>Tên đối</b> : UET <br/>
-        <b>Sân bóng</b> : DH ngoai ngu<br/>
-        <b>Khung giờ</b> : 17-18h
-    </div>
-    <br/>
-    <hr/>
-    <div class="appointment">
-        <button class="btn btn-outline-danger col-md-2 col-sm-2" onclick="showAppointment()">Tất cả cuộc hẹn</button>
-    </div>
-    <br/>
-    <div id = "allAppointment" style = "display: none;">
-        <div class="note">
-            <b>Tên đối</b> : UET <br/>
-            <b>Sân bóng</b> : DH ngoai ngu<br/>
-            <b>Ngày</b> : 24/4/2020<br/>
-            <b>Khung giờ</b> : 17-18h
-        </div>
-        <br/>
-        <div class="note">
-            <b>Tên đối</b> : SOL <br/>
-            <b>Sân bóng</b> : PVD<br/>
-            <b>Ngày</b> : 24/4/2020<br/>
-            <b>Khung giờ</b> : 17-18h
-        </div>
-        <br/>
-        <div class="note">
-            <b>Tên đối</b> : ULIS <br/>
-            <b>Sân bóng</b> : HVKTQS<br/>
-            <b>Ngày</b> : 24/4/2020<br/>
-            <b>Khung giờ</b> : 17-18h
-        </div>
-    </div>
-</div>
-
 </div>
 </section>
 @endsection
 
+@section('script')
+    <script>
+        function display_info(evt, info) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("profile-content");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace("active", "");
+            }
+            document.getElementById(info).style.display = "block";
+            evt.currentTarget.className += "active";
+        }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+    </script>
+@endsection

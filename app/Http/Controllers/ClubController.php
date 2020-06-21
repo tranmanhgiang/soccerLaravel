@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Clubs;
 use App\User;
 use App\findAmatch;
+use App\CompetitorList;
 
 class ClubController extends Controller
 {
@@ -143,9 +144,18 @@ class ClubController extends Controller
     public function getInfo($id)
     {
         $myclub = Clubs::find($id);   
-        
+        $myComp = CompetitorList::where('c1_id',$id)->orWhere('c2_id',$id)->get();
+        $countComp = count($myComp);
+        $PostsList = findAmatch::where('c_id',$id)->get();
+        $countPost = count($PostsList);
         if(isset($myclub)){
-            return view("front.myclub.info",['myclub'=>$myclub]);
+            return view("front.myclub.info",[
+                'myclub'=>$myclub,
+                'mycomp'=>$myComp,
+                'count'=>$countComp,
+                'postslist' => $PostsList,
+                'countPost' => $countPost
+            ]);
         } else {
             return view('front.myclub.create');
         }
@@ -155,6 +165,7 @@ class ClubController extends Controller
         $clubs = findAmatch::where([
             ['status', '0'],
             ['allow', '1'],
+            ['date','>=',date("Y-m-d") ],
             ['c_id','<>',Auth::user()->clubs->id]
         ])->paginate(3);
         return view('front.findamatch.waitingClub',['clubs'=>$clubs]);
@@ -309,4 +320,11 @@ class ClubController extends Controller
         $newPost->save();
         return redirect('front')->with('success','Đăng bài thành công');
     }
+
+    public function index() 
+    {
+        $clubs = Clubs::all();
+        return view('front.home.index',['clubs'=>$clubs]);
+    }
+
 }

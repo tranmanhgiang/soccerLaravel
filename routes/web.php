@@ -80,9 +80,7 @@ Route::group(['prefix'=>'front','middleware'=>'userlogin'],function(){
 
 
 
-Route::get('front',function(){
-    return view('front.home.index');
-});
+Route::get('front','ClubController@index');
 Route::get('front/login',function(){
     return view('front.user.login');
 });

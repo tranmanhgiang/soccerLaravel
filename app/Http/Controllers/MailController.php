@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Mail;
 use App\User;
 use App\Mail\sendmailCatch;
+use App\CompetitorList;
 
 class MailController extends Controller
 {
@@ -23,6 +24,18 @@ class MailController extends Controller
              }
          
         } else {
+
+            $c1 = Auth::user()->clubs->id;
+            $c2 = User::find($id)->clubs->id;
+            $fi = User::find($id)->clubs->find_amatch->id;
+            
+            $myComp = new CompetitorList;
+            
+            $myComp->c1_id = $c1;
+            $myComp->c2_id = $c2;
+            $myComp->fi_id = $fi;
+            $myComp->save();            
+
             $user->clubs->find_amatch->status = 1;
             $user->clubs->find_amatch->save();
             return redirect('front')->with('success','Bắt đối thành công!');

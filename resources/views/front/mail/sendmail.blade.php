@@ -8,7 +8,7 @@ Tên đối : {{$user->clubs->clubName}} <br/>
 Trình độ : {{$user->clubs->level}}<br/>
 Để chắc chắn hoặc thương lượng thêm với đối, vui lòng liên hệ về mail {{$user->email}} hoặc SĐT : {{'0'.$user->phone}} <br/>
 <br/>
-Cảm ơn bạn đã tin tưởng và lựa chọn của chúng tôi.<br/>
+Cảm ơn bạn đã tin tưởng và lựa chọn dịch vụ của chúng tôi.<br/>
 <br/>
 Trân trọng <br/>
 TranManhGiang

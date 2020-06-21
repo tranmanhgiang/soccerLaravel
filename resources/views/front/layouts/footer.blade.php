@@ -36,8 +36,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="front_asset/js/jquery.slicknav.js"></script>
 <script src="front_asset/js/owl.carousel.min.js"></script>
 <script src="front_asset/js/main.js"></script>
-<script src="front_asset/js/calendar.js"></script>
-<script src="front_asset/js/profile.js"></script>
 <script src="admin_asset/admin/js/display_image.js"></script>
 </body>
 

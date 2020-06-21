@@ -16,4 +16,8 @@ class Clubs extends Model
     {
         return $this->belongsTo('App\User','u_id','id');
     }
+    public function competitor()
+    {
+        return $this->hasMany('App\CompetitorList','c1_id','c_id');
+    }
 }

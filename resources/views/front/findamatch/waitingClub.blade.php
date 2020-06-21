@@ -21,6 +21,7 @@
 <section class="club-section spad">
     
     @foreach ($clubs as $item)
+        
         <div class="container">
             <div class="club-content">
                 <div class="row">
